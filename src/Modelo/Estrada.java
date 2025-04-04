@@ -5,7 +5,7 @@ public class Estrada {
     private Cidade destino;
     private double distancia; //peso
 
-    public Estrada(Cidade destino, double distancia, Cidade origem) {
+    public Estrada(Cidade destino, Cidade origem, double distancia) {
         this.destino = destino;
         this.distancia = distancia;
         this.origem = origem;
@@ -25,10 +25,6 @@ public class Estrada {
 
     @Override
     public String toString() {
-        return "Estrada{" +
-                "destino=" + destino +
-                ", origem=" + origem +
-                ", distancia=" + distancia +
-                '}';
+        return origem.getNome() + " -> " + destino.getNome() + " (" + distancia + " km)";
     }
 }
