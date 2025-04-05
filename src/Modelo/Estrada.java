@@ -5,7 +5,7 @@ public class Estrada {
     private Cidade destino;
     private double distancia; //peso
 
-    public Estrada(Cidade destino, Cidade origem, double distancia) {
+    public Estrada(Cidade origem, Cidade destino, double distancia) {
         this.destino = destino;
         this.distancia = distancia;
         this.origem = origem;

@@ -1,3 +1,4 @@
+import Grafo.AlgoritmoDijkstra;
 import Grafo.GrafoLogistica;
 
 public class Main {
@@ -15,5 +16,7 @@ public class Main {
         grafo.adicionarEstrada("Garanhuns", "Petrolina", 400);
 
         grafo.exibirMapa();
+
+        AlgoritmoDijkstra.encontrarMenorRota(grafo, "Recife", "Petrolina");
     }
 }

@@ -38,7 +38,11 @@ public class GrafoLogistica {
 
     public void exibirMapa() {
         for(Cidade c : mapaCidades.keySet()){
-            System.out.println(c.getNome() + " -> " + mapaCidades.get(c));
+            System.out.println(c.getNome() + " -> ");
+            List<Estrada> adjacentes = mapaCidades.get(c);
+            System.out.println(adjacentes.stream()
+                    .map(e -> e.getDestino().getNome() + " (" + e.getDistancia() + " km)")
+                    .toList());
         }
     }
 
