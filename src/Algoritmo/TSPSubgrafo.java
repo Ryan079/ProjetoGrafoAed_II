@@ -23,7 +23,7 @@ public class TSPSubgrafo {
         Map<Cidade, List<Cidade>> subgrafo = construirSubgrafo(grafo, cidadesSubgrafo);
 
         //Verifica conectividade
-        if(!verificarConectividade(subgrafo, inicio))
+        if(!verificarConectividade(grafo, inicio, cidadesSubgrafo))
             throw new IllegalStateException("Não há conexão entre as cidades selecionadas");
 
         //Resolução do TSP
@@ -46,19 +46,32 @@ public class TSPSubgrafo {
         return subgrafo;
     }
 
-    private static boolean verificarConectividade(Map<Cidade, List<Cidade>> subgrafo, Cidade inicio) {
+    private static boolean verificarConectividade(GrafoLogistica grafo, Cidade inicio, Set<Cidade> cidadesSubgrafo) {
+        Set<Cidade> alcancadas = new HashSet<>();
+        PriorityQueue<CidadeDistancia> fila = new PriorityQueue<>();
+        Map<Cidade, Double> distancias = new HashMap<>();
 
-        Set<Cidade> visitados = new HashSet<>();
-        Deque<Cidade> pilha = new ArrayDeque<>();
-        pilha.push(inicio);
+        cidadesSubgrafo.forEach(c -> distancias.put(c, Double.MAX_VALUE));
+        distancias.put(inicio, 0.0);
+        fila.add(new CidadeDistancia(inicio, 0.0));
 
-        while(!pilha.isEmpty()) {
-            Cidade atual = pilha.pop();
-            if(visitados.add(atual))
-                subgrafo.get(atual).forEach(pilha::push);
+        while (!fila.isEmpty()) {
+            Cidade atual = fila.poll().cidade;
+            if (!alcancadas.add(atual)) continue;
+
+            for (Estrada estrada : grafo.getMapaCidades().get(atual)) {
+                Cidade vizinho = estrada.getDestino();
+                if (!cidadesSubgrafo.contains(vizinho)) continue;
+
+                double novaDistancia = distancias.get(atual) + estrada.getDistancia();
+                if (novaDistancia < distancias.get(vizinho)) {
+                    distancias.put(vizinho, novaDistancia);
+                    fila.add(new CidadeDistancia(vizinho, novaDistancia));
+                }
+            }
         }
 
-        return visitados.size() == subgrafo.size();
+        return alcancadas.containsAll(cidadesSubgrafo);
     }
 
     private static List<Cidade> resolverTSPNoSubgrafo(GrafoLogistica grafo, Map<Cidade, List<Cidade>> subgrafo, Cidade inicio, Set<Cidade> cidadesSubgrafo) {
@@ -115,6 +128,7 @@ public class TSPSubgrafo {
         return maisProxima;
     }
 
+    //Dijkstra no caso de não houver conexão direta
     private static Cidade encontrarVizinhoIndireto(GrafoLogistica grafo, Cidade origem, Set<Cidade> candidatas, Set<Cidade> cidadesSubgrafo) {
 
         PriorityQueue<CidadeDistancia> fila = new PriorityQueue<>();
