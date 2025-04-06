@@ -1,0 +1,186 @@
+origem,destino,distancia_km
+Recife,Olinda,12.5
+Recife,Jaboatão dos Guararapes,18.0
+Recife,Camaragibe,16.7
+Recife,Paulista,12.0
+Recife,Vitória de Santo Antão,55.0
+Jaboatão dos Guararapes,Cabo de Santo Agostinho,24.7
+Cabo de Santo Agostinho,Ipojuca,19.2
+Ipojuca,Sirinhaém,35.0
+Sirinhaém,Rio Formoso,22.4
+Rio Formoso,Tamandaré,17.5
+Tamandaré,Barreiros,19.8
+Barreiros,Palmares,25.0
+Palmares,Catende,14.9
+Palmares,Angelim,28.0
+Palmares,Xexéu,18.0
+Catende,Água Preta,22.3
+Água Preta,Gameleira,18.7
+Gameleira,Escada,20.0
+Escada,Ribeirão,15.0
+Ribeirão,Moreno,12.0
+Moreno,Passira,25.0
+Passira,Limoeiro,18.0
+Limoeiro,Feira Nova,22.0
+Feira Nova,Glória do Goitá,30.0
+Glória do Goitá,Lagoa do Ouro,25.0
+Lagoa do Ouro,Correntes,40.0
+Correntes,Canhotinho,35.0
+Canhotinho,Palmares,55.8
+Camaragibe,São Lourenço da Mata,12.3
+São Lourenço da Mata,Paudalho,18.5
+Paudalho,Carpina,11.9
+Carpina,Tracunhaém,14.8
+Tracunhaém,Nazaré da Mata,19.6
+Nazaré da Mata,Aliança,22.4
+Aliança,Itambé,28.7
+Itambé,Goiana,34.9
+Goiana,Itaquitinga,25.0
+Itaquitinga,Itapissuma,20.0
+Itapissuma,Igarassu,15.8
+Igarassu,Araçoiaba,22.3
+Araçoiaba,Abreu e Lima,18.0
+Vitória de Santo Antão,Pombos,30.0
+Pombos,Chã Grande,25.0
+Chã Grande,Gravatá,14.7
+Gravatá,Bezerros,19.3
+Bezerros,Caruaru,25.6
+Caruaru,São Caetano,30.2
+Caruaru,Garanhuns,90.0
+Caruaru,Belo Jardim,42.3
+Caruaru,Toritama,28.3
+São Caetano,Altinho,28.9
+Altinho,Agrestina,34.1
+Agrestina,Cupira,26.8
+Belo Jardim,Sanharó,38.7
+Sanharó,Bom Jardim,29.5
+Bom Jardim,Surubim,31.2
+Surubim,Taquaritinga do Norte,34.8
+Taquaritinga do Norte,Santa Cruz do Capibaribe,45.1
+Santa Cruz do Capibaribe,Toritama,19.6
+Garanhuns,Capoeiras,35.0
+Garanhuns,Brejo da Madre de Deus,68.3
+Garanhuns,Pesqueira,45.0
+Brejo da Madre de Deus,Calçado,42.7
+Calçado,Canhotinho,31.5
+Pesqueira,Arcoverde,54.9
+Arcoverde,Buíque,44.7
+Arcoverde,Sertânia,79.5
+Buíque,Araripina,185.0
+Araripina,Ouricuri,85.0
+Ouricuri,Trindade,61.2
+Trindade,Parnamirim,41.8
+Parnamirim,Serra Talhada,120.3
+Serra Talhada,Salgueiro,94.8
+Salgueiro,Terra Nova,58.2
+Salgueiro,Cedro,55.0
+Cedro,Verdejante,40.0
+Terra Nova,Petrolina,135.7
+Petrolina,Santa Maria da Boa Vista,110.0
+Petrolina,Afrânio,45.0
+Petrolina,Lagoa Grande,75.2
+Afrânio,Dormentes,60.0
+Dormentes,Petrolândia,55.0
+Petrolândia,Floresta,85.3
+Floresta,Belém do São Francisco,98.7
+Belém do São Francisco,Petrolina,148.2
+Sertânia,Floresta,85.3
+Belém de Maria,São Joaquim do Monte,22.0
+Buenos Aires,Serra Talhada,65.0
+Camutanga,Limoeiro,25.0
+Casinhas,Passira,18.0
+Chã de Alegria,Glória do Goitá,15.0
+Cumaru,Bom Jardim,28.0
+Custódia,Sertânia,50.0
+Exu,Bodocó,50.0
+Ferreiros,Passira,22.0
+Flores,Bom Jardim,35.0
+Frei Miguelinho,Limoeiro,25.0
+Ibimirim,Sertânia,75.0
+Ibirajuba,Canhotinho,20.0
+Iguaraci,Afogados da Ingazeira,45.0
+Itapetim,São José do Egito,35.0
+Lagoa do Carro,Carpina,15.0
+Lagoa do Itaenga,Passira,15.0
+Lajedo,Canhotinho,25.0
+Manari,Inajá,70.0
+Orocó,Petrolina,60.0
+Salgadinho,Limoeiro,20.0
+Santa Cruz,Araripina,50.0
+Vertentes,Santa Maria do Cambucá,20.0
+Amaraji,Palmares,25.0
+Calumbi,Flores,30.0
+Lagoa dos Gatos,Brejo da Madre de Deus,35.0
+Machados,Vicência,20.0
+Mirandiba,Serra Talhada,55.0
+Orobó,Nazaré da Mata,18.0
+Palmeirina,Caetés,25.0
+Primavera,Bom Jardim,25.0
+Quipapá,Palmares,22.0
+Quixaba,Serra Talhada,30.0
+Saloá,Garanhuns,25.0
+Santa Cruz da Baixa Verde,São José do Belmonte,40.0
+Santa Filomena,Ouricuri,55.0
+São Benedito do Sul,Ribeirão,30.0
+São Bento do Una,Capoeiras,40.0
+São Caitano,Caruaru,30.0
+São João,Surubim,35.0
+São Joaquim do Monte,Bom Jardim,25.0
+São José do Belmonte,Betânia,65.0
+São José do Egito,Itapetim,35.0
+São Vicente Ferrer,Nazaré da Mata,20.0
+Tacaratu,Petrolândia,45.0
+Tacaimbó,Caruaru,25.0
+Terezinha,Garanhuns,40.0
+Vertente do Lério,Passira,15.0
+Xexéu,Palmares,18.0
+Ilha de Itamaracá,Igarassu,12.0
+Itacuruba,Floresta,60.0
+Itamaracá,Igarassu,15.0
+Jaqueira,Palmares,25.0
+Jataúba,Caruaru,40.0
+Jatobá,Petrolândia,50.0
+Joaquim Nabuco,Palmares,30.0
+Jucati,Garanhuns,35.0
+Jupi,Manari,30.0
+Jurema,Canhotinho,25.0
+Moreilândia,Araripina,40.0
+Alagoinha,Panelas,35.0
+Barra de Guabiraba,Palmeirina,28.0
+Belém do São Francisco,Petrolina,148.2
+Bom Conselho,Garanhuns,45.0
+Bonito,São José da Coroa Grande,40.0
+Brejinho,Caruaru,45.0
+Brejão,Bonito,25.0
+Cabrobó,Ouricuri,60.0
+Cachoeirinha,Lajedo,30.0
+Camocim de São Félix,Bezerros,20.0
+Carnaubeira da Penha,Serra Talhada,90.0
+Carnaíba,Afogados da Ingazeira,40.0
+Condado,Goiana,20.0
+Cortês,Palmares,30.0
+Granito,Petrolina,65.0
+Iati,Manari,50.0
+Ingazeira,Afogados da Ingazeira,18.0
+Ipubi,Araripina,70.0
+Itaíba,Petrolândia,60.0
+João Alfredo,Palmares,30.0
+Macaparana,Nazaré da Mata,15.0
+Maraial,Barreiros,25.0
+Panelas,São Joaquim do Monte,30.0
+Paranatama,Garanhuns,40.0
+Pedra,Arcoverde,55.0
+Poção,Arcoverde,40.0
+Riacho das Almas,Cupira,25.0
+Sairé,Bezerros,25.0
+Santa Terezinha,Brejo da Madre de Deus,35.0
+Serrita,Salgueiro,50.0
+Solidão,Afogados da Ingazeira,30.0
+São José da Coroa Grande,Barreiros,35.0
+Tabira,São José do Egito,40.0
+Timbaúba,Itambé,25.0
+Triunfo,Araripina,60.0
+Tupanatinga,Arcoverde,40.0
+Tuparetama,Serra Talhada,45.0
+Venturosa,Arcoverde,60.0
+Águas Belas,Bom Conselho,35.0

@@ -1,5 +1,8 @@
-import Grafo.AlgoritmoDijkstra;
+import Algoritmo.AlgoritmoDijkstra;
+import Algoritmo.AlgoritmoVizinhoMaisProximo;
 import Grafo.GrafoLogistica;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +21,16 @@ public class Main {
         grafo.exibirMapa();
 
         AlgoritmoDijkstra.encontrarMenorRota(grafo, "Recife", "Petrolina");
+
+        try {
+            List<String> viagem = AlgoritmoVizinhoMaisProximo.calcularRotaMaisProxima(grafo, "Recife");
+
+            System.out.println("Rota otimizada:");
+            System.out.println(String.join(" -> ", viagem));
+        } catch (IllegalArgumentException ex) {
+            System.err.println("Erro: " + ex.getMessage());
+        }
+
+
     }
 }

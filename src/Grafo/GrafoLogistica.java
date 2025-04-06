@@ -46,7 +46,7 @@ public class GrafoLogistica {
         }
     }
 
-    private Cidade encontrarCidade(String nome) {
+    public Cidade encontrarCidade(String nome) {
         return mapaCidades.keySet().stream()
                 .filter(cidade -> cidade.getNome().equals(nome))
                 .findFirst()
